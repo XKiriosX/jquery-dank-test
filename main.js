@@ -15,15 +15,25 @@ para.addEventListener("mouseout", function(event) {
 });
 
 //WORKING FRAGMENT
+
+//SHOW PRE
+
+$(function() {
+    $(window(function(){
+        $("pre").css("display: block");
+    }));
+});
+
 //INSTAGRAM LOGO DANK MLG SCRIPTS
 
-var audio = new Audio("resources/MLG-Sanic.mp3") //DO NOT UNCOMMENT IT!!!!!!!!
+var audio = new Audio("resources/AncientReality - Major League Can Can.mp3") //DO NOT UNCOMMENT IT!!!!!!!!
 audio.volume = 0.04;
 
 $("img").mouseover(function() {
     $("body").css({
         "background": "url(resources/ezgif.com-resize.gif)", "background-size": "100% 100%"
     });
+    $(".fuk-u").css("display", "inline");
     audio.play(); //DO NOT UNCOMMENT IT!!!!!!!!
 });
 
@@ -32,6 +42,7 @@ $("img").mouseout(function() {
         "background-image": "", 
         "background-size": ""
     });
+    $(".fuk-u").css("display", "");
     audio.pause(); //DO NOT UNCOMMENT IT!!!!!!!!
 });
 
